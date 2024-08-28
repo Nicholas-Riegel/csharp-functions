@@ -55,13 +55,41 @@ sb.Remove(7, 10); // Removes "beautiful"
 // Console.WriteLine($"The number entered is: {outNum}."); //=5
 
 // REFERENCE PARAMETERS
-int num = 10; // memory address 1
-string name = "Joe";
-Assign(ref num, ref name);
-Console.WriteLine($"{num}, {name}");
+// int num = 10; // memory address 1
+// string name = "Joe";
+// Assign(ref num, ref name);
+// // Console.WriteLine($"{num}, {name}");
 
-static void Assign(ref int num, ref string name) // this makes a link to the memory address of the variable
+// static void Assign(ref int num, ref string name) // this makes a link to the memory address of the variable
+// {
+//     num = 20;
+//     name = "Aba";
+// }
+
+// EXERCISE
+/*
+Ask use for width and height
+Store them
+Create function to calculate the area
+Function should calculate the area using width * height / 2
+print out area of triangle
+*/
+
+System.Console.WriteLine("Enter the height of the triangle: ");
+string? stringHeight = Console.ReadLine();
+if (!double.TryParse(stringHeight, out double height))
 {
-    num = 20;
-    name = "Aba";
+    System.Console.WriteLine("Invalid input");
+    return;
 }
+
+System.Console.WriteLine("Enter the width of the triangle: ");
+string? stringWidth = Console.ReadLine();
+// double width = Convert.ToDouble(stringWidth);
+if (!double.TryParse(stringHeight, out double width))
+{
+    System.Console.WriteLine("Invalid input");
+    return;
+}
+
+System.Console.WriteLine($"The area of the triangle is: {width * height / 2}");
