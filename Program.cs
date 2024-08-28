@@ -75,21 +75,66 @@ Function should calculate the area using width * height / 2
 print out area of triangle
 */
 
-System.Console.WriteLine("Enter the height of the triangle: ");
-string? stringHeight = Console.ReadLine();
-if (!double.TryParse(stringHeight, out double height))
+// System.Console.WriteLine("Enter the height of the triangle: ");
+// string? stringHeight = Console.ReadLine();
+// if (!double.TryParse(stringHeight, out double height))
+// {
+//     System.Console.WriteLine("Invalid input");
+//     return;
+// }
+
+// System.Console.WriteLine("Enter the width of the triangle: ");
+// string? stringWidth = Console.ReadLine();
+// // double width = Convert.ToDouble(stringWidth);
+// if (!double.TryParse(stringHeight, out double width))
+// {
+//     System.Console.WriteLine("Invalid input");
+//     return;
+// }
+
+// System.Console.WriteLine($"The area of the triangle is: {width * height / 2}");
+
+// static double getInput(string message)
+// {
+//     System.Console.WriteLine(message);
+//     return Convert.ToDouble(Console.ReadLine());
+// }
+
+// double height = getInput("Enter height: ");
+// double width = getInput("Enter width: ");
+
+// System.Console.WriteLine($"The area of the triangle is: {width * height / 2}");
+
+// Ex 2
+/*
+Create and initialize int array of numbers
+Create function SumOfNumbers with int return type
+int array param
+function should retrun total of all numbers
+output total
+extra: check array length
+return -1 if array empty
+check return in main and output message
+do we need to return -1? how else can we make this?
+*/
+
+int[] array0 = [3, 4, 5];
+
+static int SumOfNumbers(int[] array)
 {
-    System.Console.WriteLine("Invalid input");
-    return;
+    if (array.Length == 0)
+    {
+        return -1;
+    }
+    else
+    {
+        int answer = 0;
+        foreach(int num in array)
+        {
+            answer += num;
+        }
+        return answer;
+    }
 }
 
-System.Console.WriteLine("Enter the width of the triangle: ");
-string? stringWidth = Console.ReadLine();
-// double width = Convert.ToDouble(stringWidth);
-if (!double.TryParse(stringHeight, out double width))
-{
-    System.Console.WriteLine("Invalid input");
-    return;
-}
-
-System.Console.WriteLine($"The area of the triangle is: {width * height / 2}");
+System.Console.WriteLine(SumOfNumbers(array0));
