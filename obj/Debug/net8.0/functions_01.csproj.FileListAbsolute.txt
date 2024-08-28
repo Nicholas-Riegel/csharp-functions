@@ -1,0 +1,14 @@
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/bin/Debug/net8.0/functions_01
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/bin/Debug/net8.0/functions_01.deps.json
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/bin/Debug/net8.0/functions_01.runtimeconfig.json
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/bin/Debug/net8.0/functions_01.dll
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/bin/Debug/net8.0/functions_01.pdb
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/obj/Debug/net8.0/functions_01.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/obj/Debug/net8.0/functions_01.AssemblyInfoInputs.cache
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/obj/Debug/net8.0/functions_01.AssemblyInfo.cs
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/obj/Debug/net8.0/functions_01.csproj.CoreCompileInputs.cache
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/obj/Debug/net8.0/functions_01.dll
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/obj/Debug/net8.0/refint/functions_01.dll
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/obj/Debug/net8.0/functions_01.pdb
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/obj/Debug/net8.0/functions_01.genruntimeconfig.cache
+/Users/nicholas/Dev/csharp/freeCodeCamp/functions_01/obj/Debug/net8.0/ref/functions_01.dll
