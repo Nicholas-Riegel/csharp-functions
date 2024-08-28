@@ -1,4 +1,5 @@
-﻿using System.Runtime.InteropServices;
+﻿using System.Reflection;
+using System.Runtime.InteropServices;
 using System.Text;
 using classes;
 
@@ -44,29 +45,23 @@ sb.Remove(7, 10); // Removes "beautiful"
 
 // OUT PARAMETERS
 
-// int num = 0;
-
-// static void testFn(out int x)
+// static void testFn(int inNum, out int outNum)
 // {
-//     x = 5;
+//     outNum = inNum;
 // }
 
-// testFn(out num); // don't have to specify 'int' bc already declared
+// testFn(4, out int outNum); // don't have to specify 'int' bc already declared
 
-// Console.WriteLine(num); //=5
+// Console.WriteLine($"The number entered is: {outNum}."); //=5
 
-List<string> shoppingList = ["coffee", "milk"];
+// REFERENCE PARAMETERS
+int num = 10; // memory address 1
+string name = "Joe";
+Assign(ref num, ref name);
+Console.WriteLine($"{num}, {name}");
 
-// System.Console.WriteLine(shoppingList.IndexOf("milk"));
-
-int a = 1;
-int b = 1;
-
-if (a.Equals(b))
+static void Assign(ref int num, ref string name) // this makes a link to the memory address of the variable
 {
-    System.Console.WriteLine("true");
-} 
-else
-{
-    System.Console.WriteLine("false");
+    num = 20;
+    name = "Aba";
 }
