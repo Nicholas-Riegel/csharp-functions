@@ -118,7 +118,7 @@ check return in main and output message
 do we need to return -1? how else can we make this?
 */
 
-int[] array0 = [3, 4, 5];
+// int[] array0 = [3, 4, 5];
 
 // static int SumOfNumbers(int[] array)
 // {
@@ -137,29 +137,77 @@ int[] array0 = [3, 4, 5];
 //     }
 // }
 
-static bool SumOfNumbers(int[] array, out int total)
-{
-    total = 0;
+// static bool SumOfNumbers(int[] array, out int total)
+// {
+//     total = 0;
 
-    if (array.Length == 0)
-    {
-        return false;
-    }
-    else
-    {
-        foreach(int num in array)
-        {
-            total += num;
-        }
-        return true;
-    }
-}
+//     if (array.Length == 0)
+//     {
+//         return false;
+//     }
+//     else
+//     {
+//         foreach(int num in array)
+//         {
+//             total += num;
+//         }
+//         return true;
+//     }
+// }
 
-if (SumOfNumbers(array0, out int total))
+// if (SumOfNumbers(array0, out int total))
+// {
+//     System.Console.WriteLine($"The total is: {total}");
+// }
+// else
+// {
+//     System.Console.WriteLine("Array is empty");
+// }
+
+// EXCEPTION HANDLING
+// System.FormatException
+// System.OverflowException
+
+// bool looping = true;
+
+// while(looping)
+// {
+//     try
+//     {
+//         System.Console.WriteLine("Enter a number");
+
+//         var num = Convert.ToInt32(System.Console.ReadLine());
+
+//         looping = false;
+        
+//         System.Console.WriteLine($"The number was: {num}");    
+//     }
+//     catch (System.FormatException)
+//     {    
+//         System.Console.WriteLine("You didn't enter an integer.");
+//     }
+//     catch (System.OverflowException)
+//     {    
+//         System.Console.WriteLine("Number too large.");
+//     }
+//     catch (System.Exception)
+//     {    
+//         System.Console.WriteLine("Something went wrong.");
+//     }
+// }
+
+// System.Console.WriteLine("Goodbye!");
+
+// PRINTING ERRORS
+try
 {
-    System.Console.WriteLine($"The total is: {total}");
+    System.Console.WriteLine("Enter a number");
+
+    var num = Convert.ToInt32(System.Console.ReadLine());
+    
+    System.Console.WriteLine($"The number was: {num}");    
 }
-else
-{
-    System.Console.WriteLine("Array is empty");
+catch (Exception e)
+{    
+    System.Console.WriteLine($"The error is: {e.Message}");
 }
