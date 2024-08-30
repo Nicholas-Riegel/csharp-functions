@@ -120,21 +120,46 @@ do we need to return -1? how else can we make this?
 
 int[] array0 = [3, 4, 5];
 
-static int SumOfNumbers(int[] array)
+// static int SumOfNumbers(int[] array)
+// {
+//     if (array.Length == 0)
+//     {
+//         return -1;
+//     }
+//     else
+//     {
+//         int answer = 0;
+//         foreach(int num in array)
+//         {
+//             answer += num;
+//         }
+//         return answer;
+//     }
+// }
+
+static bool SumOfNumbers(int[] array, out int total)
 {
+    total = 0;
+
     if (array.Length == 0)
     {
-        return -1;
+        return false;
     }
     else
     {
-        int answer = 0;
         foreach(int num in array)
         {
-            answer += num;
+            total += num;
         }
-        return answer;
+        return true;
     }
 }
 
-System.Console.WriteLine(SumOfNumbers(array0));
+if (SumOfNumbers(array0, out int total))
+{
+    System.Console.WriteLine($"The total is: {total}");
+}
+else
+{
+    System.Console.WriteLine("Array is empty");
+}
