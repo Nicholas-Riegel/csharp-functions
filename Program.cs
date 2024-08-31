@@ -5,15 +5,15 @@ using classes;
 
 // Test.TestMessage();
 
-string test = "hello";
-string test2 = test.Replace("e", "a");
+// string test = "hello";
+// string test2 = test.Replace("e", "a");
 
 // STRINGBUILDER
-StringBuilder sb = new("Hello, ");
-sb.Append("world!");
-sb.Insert(7, "beautiful ");
-sb.Replace("world", "C#");
-sb.Remove(7, 10); // Removes "beautiful"
+// StringBuilder sb = new("Hello, ");
+// sb.Append("world!");
+// sb.Insert(7, "beautiful ");
+// sb.Replace("world", "C#");
+// sb.Remove(7, 10); // Removes "beautiful"
 
 // Console.WriteLine(sb.ToString()); // Outputs "Hello, C#!"
 
@@ -199,15 +199,28 @@ do we need to return -1? how else can we make this?
 // System.Console.WriteLine("Goodbye!");
 
 // PRINTING ERRORS
-try
-{
-    System.Console.WriteLine("Enter a number");
+// try
+// {
+//     System.Console.WriteLine("Enter a number");
 
-    var num = Convert.ToInt32(System.Console.ReadLine());
+//     var num = Convert.ToInt32(System.Console.ReadLine());
     
-    System.Console.WriteLine($"The number was: {num}");    
+//     System.Console.WriteLine($"The number was: {num}");    
+// }
+// catch (Exception e)
+// {    
+//     System.Console.WriteLine($"The error is: {e.Message}");
+// }
+
+// DEBUGGING
+int age = 35;
+if (age > 18)
+{
+    System.Console.WriteLine("18+");
 }
-catch (Exception e)
-{    
-    System.Console.WriteLine($"The error is: {e.Message}");
+else if (age > 30)
+{
+    System.Console.WriteLine("30+");
 }
+
+System.Console.ReadLine();
